@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private IncrementarViewModel incrementarViewModel;
     private int res=0;
+    private static final String TAG = "TAG1";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,5 +51,35 @@ public class MainActivity extends AppCompatActivity {
                 binding.tvResCon.setText("Con ViewModel: "+incrementarViewModel.getContador());
             }
         });
+    }
+    
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(TAG, "onStart llamado");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(TAG, "onResume llamado");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG, "onPause llamado");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(TAG, "onStop llamado");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy llamado");
     }
 }
