@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         incrementarViewModel=new ViewModelProvider(this).get(IncrementarViewModel.class);
         Log.d("TAG1","onCreate()");
         //mostrar el valor de  los editText ya que este metodo se eejecutara varias veces
-        binding.tvResCon.setText("Con ViewModel: "+incrementarViewModel.getContador());
+        binding.tvResCon.setText("Con ViewModel: "+incrementarViewModel.getContador().getValue());
         binding.tvResSin.setText("Sin ViewModel: "+res);
         tarea();
     }
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //incrementar el valor almacenado en el viewmodel
                 incrementarViewModel.incrementar();
-                binding.tvResCon.setText("Con ViewModel: "+incrementarViewModel.getContador());
+                binding.tvResCon.setText("Con ViewModel: "+incrementarViewModel.getContador().getValue());
             }
         });
     }
