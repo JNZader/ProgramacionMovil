@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,SegundaActivity.class);
+                intent.putExtra("PalabraEsp",binding.etEsp.getText().toString());
+                startActivity(intent);
             }
         });
 
