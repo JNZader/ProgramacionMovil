@@ -2,19 +2,22 @@ package com.example.tp3;
 
 import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.lifecycle.ViewModelProvider;
+
+import com.example.tp3.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
+    private ActivityMainBinding binding;
+    private UsuarioViewModel usuarioVM;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
+        binding=ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
+        usuarioVM=new ViewModelProvider(this).get(UsuarioViewModel.class);
     }
 }
