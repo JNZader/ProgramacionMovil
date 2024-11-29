@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         binding.buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String nombre = binding.editTextAge.getText().toString();
+                String nombre = binding.editTextName.getText().toString();
                 int edad;
                 if (nombre.isEmpty() && binding.editTextAge.getText().toString().isEmpty()) {
                     binding.textViewUserList.setText("ERROR");
