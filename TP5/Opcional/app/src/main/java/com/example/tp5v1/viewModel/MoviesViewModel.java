@@ -24,6 +24,7 @@ public class MoviesViewModel extends ViewModel {
         movies.add(new Movie("Encanto","https://via.assets.so/movie.png?id=4",4.0f));
         movies.add(new Movie("Los locos adams","https://via.assets.so/movie.png?id=5",4.0f));
         movies.add(new Movie("LAMB","https://via.assets.so/movie.png?id=6",2.0f));
+        moviesList.setValue(movies);
     }
 
     public MutableLiveData<List<Movie>> getMoviesList() {
