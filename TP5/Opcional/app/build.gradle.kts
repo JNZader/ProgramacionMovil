@@ -43,7 +43,7 @@ dependencies {
     implementation(libs.constraintlayout)
 
     implementation(libs.glide)
-    runtimeOnly("com.github.bumptech.glide:compiler:4.16.0")
+    annotationProcessor(libs.glide.compiler)
 
 
     testImplementation(libs.junit)

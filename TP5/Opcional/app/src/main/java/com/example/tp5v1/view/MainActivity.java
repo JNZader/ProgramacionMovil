@@ -9,7 +9,6 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 
-import com.example.tp5v1.R;
 import com.example.tp5v1.databinding.ActivityMainBinding;
 import com.example.tp5v1.listener.MovieClickedListener;
 import com.example.tp5v1.model.Movie;
