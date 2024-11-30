@@ -1,8 +1,10 @@
-package com.example.tp5v1;
+package com.example.tp5v1.view;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.tp5v1.R;
 
 public class MainActivity extends AppCompatActivity {
 
