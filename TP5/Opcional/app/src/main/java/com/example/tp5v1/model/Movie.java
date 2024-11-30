@@ -4,9 +4,9 @@ public class Movie {
     private String title, cover;
     private float stars;
 
-    public Movie(String cover, String title, float stars) {
-        this.cover = cover;
+    public Movie(String title, String cover, float stars) {
         this.title = title;
+        this.cover = cover;
         this.stars= stars;
     }
 
