@@ -18,7 +18,7 @@ public class ArticuloAdapter extends RecyclerView.Adapter<ArticuloAdapter.ViewHo
     private ArticuloClickedListener listener;
     private Context context;
 
-    public ArticuloAdapter(List<Articulo> articulos, ArticuloClickedListener listener, Context context) {
+    public ArticuloAdapter(List<Articulo> articulos, Context context) {
         this.articulos = articulos;
         this.listener = listener;
         this.context = context;
