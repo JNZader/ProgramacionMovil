@@ -25,7 +25,7 @@
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/ic_launcher_background"
             tools:srcCompat="@drawable/ic_launcher_background"
-            android:contentDescription="Movie Poster"/>
+            android:contentDescription="Imagen del articulo"/>
 
         <!-- LinearLayout: Contiene la información de texto y los círculos de colores -->
         <LinearLayout
