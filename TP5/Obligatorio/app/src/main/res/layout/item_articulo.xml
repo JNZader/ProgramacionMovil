@@ -39,7 +39,7 @@
                 android:id="@+id/nombreArticulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:textStyle="bold"/>
 
             <!-- TextView: Muestra el precio del artículo -->
@@ -47,7 +47,7 @@
                 android:id="@+id/precioArticulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"/>
+                android:textSize="12sp"/>
 
             <!-- LinearLayout: Contenedor para los círculos de colores -->
             <LinearLayout
