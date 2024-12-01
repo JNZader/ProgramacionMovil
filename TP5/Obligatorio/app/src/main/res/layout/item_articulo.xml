@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- CardView: Proporciona un contenedor tipo tarjeta para el item con esquinas redondeadas y elevación -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <!-- LinearLayout raíz: Organiza el contenido del item horizontalmente -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- ImageView: Muestra la imagen del artículo -->
+        <ImageView
+            android:id="@+id/imagenArticulo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:srcCompat="@drawable/ic_launcher_background"
+            android:contentDescription="Movie Poster"/>
+
+        <!-- LinearLayout: Contiene la información de texto y los círculos de colores -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <!-- TextView: Muestra el nombre del artículo -->
+            <TextView
+                android:id="@+id/nombreArticulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <!-- TextView: Muestra el precio del artículo -->
+            <TextView
+                android:id="@+id/precioArticulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+
+            <!-- LinearLayout: Contenedor para los círculos de colores -->
+            <LinearLayout
+                android:id="@+id/coloresDisponibles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
