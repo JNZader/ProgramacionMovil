@@ -1,63 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!-- CardView: Proporciona un contenedor tipo tarjeta para el item con esquinas redondeadas y elevación -->
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_margin="8dp"
     app:cardCornerRadius="8dp"
-    app:cardElevation="4dp">
+    app:cardElevation="4dp"
+    android:background="@android:color/darker_gray">
 
-    <!-- LinearLayout raíz: Organiza el contenido del item horizontalmente -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- ImageView: Muestra la imagen del artículo -->
+        <!-- Nombre del artículo -->
+        <TextView
+            android:id="@+id/nombreArticulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Precio del artículo -->
+        <TextView
+            android:id="@+id/precioArticulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Contenedor para los círculos de colores -->
+        <LinearLayout
+            android:id="@+id/coloresDisponibles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Imagen del artículo -->
         <ImageView
             android:id="@+id/imagenArticulo"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/ic_launcher_background"
-            tools:srcCompat="@drawable/ic_launcher_background"
-            android:contentDescription="Imagen del articulo"/>
-
-        <!-- LinearLayout: Contiene la información de texto y los círculos de colores -->
-        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginStart="16dp">
-
-            <!-- TextView: Muestra el nombre del artículo -->
-            <TextView
-                android:id="@+id/nombreArticulo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:textStyle="bold"/>
-
-            <!-- TextView: Muestra el precio del artículo -->
-            <TextView
-                android:id="@+id/precioArticulo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="12sp"/>
-
-            <!-- LinearLayout: Contenedor para los círculos de colores -->
-            <LinearLayout
-                android:id="@+id/coloresDisponibles"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="8dp"/>
-
-        </LinearLayout>
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Imagen del artículo"/>
 
     </LinearLayout>
 
