@@ -1,8 +1,9 @@
 package com.example.tp5obligatorio.model;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Articulo {
+public class Articulo implements Serializable {
     private String nombre;
     private String genero;
     private List<String> talles;

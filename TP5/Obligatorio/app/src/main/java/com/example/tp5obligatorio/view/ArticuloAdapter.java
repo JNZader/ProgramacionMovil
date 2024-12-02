@@ -1,6 +1,7 @@
 package com.example.tp5obligatorio.view;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,7 +25,7 @@ public class ArticuloAdapter extends RecyclerView.Adapter<ArticuloAdapter.ViewHo
     private ArticuloClickedListener listener;
     private Context context;
 
-    private static final Map<String, Integer> COLOR_MAP = new HashMap<>();
+    static final Map<String, Integer> COLOR_MAP = new HashMap<>();
     static {
         COLOR_MAP.put("Verde", Color.GREEN);
         COLOR_MAP.put("Azul", Color.BLUE);
@@ -74,8 +75,12 @@ public class ArticuloAdapter extends RecyclerView.Adapter<ArticuloAdapter.ViewHo
             binding.nombreArticulo.setText(articulo.getNombre());
             binding.precioArticulo.setText(String.format("$%.2f", articulo.getPrecio()));
             binding.imagenArticulo.setImageResource(articulo.getImagenResourceId());
-            binding.getRoot().setOnClickListener(v -> listener.onArticuloClicked(articulo));
 
+            binding.getRoot().setOnClickListener(v -> {
+                Intent intent = new Intent(context, DetalleArticuloActivity.class);
+                intent.putExtra("articulo", articulo);
+                context.startActivity(intent);
+            });
             // Implementa los círculos de colores
             binding.coloresDisponibles.removeAllViews();
             for (String color : articulo.getColores()) {
