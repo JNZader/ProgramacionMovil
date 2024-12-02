@@ -1,0 +1,26 @@
+<resources>
+    <!-- Colores base -->
+    <color name="primary">#1E88E5</color>           <!-- Azul vibrante -->
+    <color name="primary_dark">#1565C0</color>      <!-- Azul oscuro -->
+    <color name="primary_light">#64B5F6</color>     <!-- Azul claro -->
+    <color name="accent">#FF7043</color>            <!-- Coral vibrante -->
+
+    <!-- Colores de fondo -->
+    <color name="background">#212121</color>        <!-- Fondo oscuro, gris muy oscuro -->
+    <color name="surface">#424242</color>           <!-- Gris intermedio, para separar contenido -->
+    <color name="surface_light">#616161</color>     <!-- Gris claro para fondos de campo -->
+
+    <!-- Colores de texto -->
+    <color name="text_primary">#FFFFFF</color>      <!-- Blanco para texto principal -->
+    <color name="text_secondary">#B0BEC5</color>    <!-- Gris claro para texto secundario -->
+    <color name="text_hint">#90A4AE</color>         <!-- Gris suave para hints -->
+
+    <!-- Colores de estado -->
+    <color name="success">#66BB6A</color>           <!-- Verde suave para éxito -->
+    <color name="error">#FF5252</color>             <!-- Rojo coral para error -->
+    <color name="warning">#FFEB3B</color>           <!-- Amarillo suave para advertencias -->
+
+    <!-- Colores heredados para compatibilidad -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>
