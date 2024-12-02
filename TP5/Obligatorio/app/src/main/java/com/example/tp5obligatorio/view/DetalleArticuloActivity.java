@@ -5,10 +5,12 @@ import static com.example.tp5obligatorio.view.ArticuloAdapter.*;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.example.tp5obligatorio.R;
 import com.example.tp5obligatorio.databinding.DetalleArticuloBinding;
@@ -23,6 +25,12 @@ public class DetalleArticuloActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DetalleArticuloBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        // Configurar la Toolbar
+        Toolbar toolbar = binding.toolbar;
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         Articulo articulo = (Articulo) getIntent().getSerializableExtra("articulo");
 
@@ -59,5 +67,13 @@ public class DetalleArticuloActivity extends AppCompatActivity {
                 binding.coloresDisponibles.addView(colorView);
             }
         }
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed(); // Esto hará que la actividad se cierre y vuelva a la anterior
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
