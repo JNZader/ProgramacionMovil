@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 
-import com.example.tp5obligatorio.R;
 import com.example.tp5obligatorio.databinding.ActivityMainBinding;
 
 import viewModel.ArticuloViewModel;
