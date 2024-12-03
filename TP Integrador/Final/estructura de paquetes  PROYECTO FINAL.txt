@@ -1,0 +1,54 @@
+Estructura de Paquetes
+adapters
+ImageAdapter: Adaptador para manejar imágenes en un RecyclerView.
+PostAdapter: Adaptador para manejar publicaciones en un RecyclerView.
+model
+Post: Clase que representa una publicación.
+User: Clase que representa un usuario.
+providers
+AuthProvider: Proveedor de autenticación para manejar el inicio de sesión, registro y cierre de sesión.
+PostProvider: Proveedor para manejar las publicaciones.
+UserProvider: Proveedor para manejar los usuarios.
+util
+ImageUtils: Utilidades para manejar imágenes.
+Validaciones: Clase para validar datos de entrada.
+view
+fragments: Contiene los fragmentos de la interfaz de usuario.
+ChatsFragment
+FiltrosFragment
+HomeFragment
+PerfilFragment
+activities: Contiene las actividades de la interfaz de usuario.
+HomeActivity
+MainActivity
+MyApplication
+PostActivity
+RegisterActivity
+viewmodel
+ImageViewModel
+MainViewModel
+MainViewModelFactory
+PostViewModel
+RegisterViewModel
+Archivos XML
+layout
+activity_home.xml
+activity_main.xml
+activity_register.xml
+fragment_chats.xml
+fragment_filtros.xml
+fragment_home.xml
+fragment_perfil.xml
+menu
+bottom_navigation_menu.xml: Menú para la barra de navegación inferior.
+mipmap
+ic_launcher.xml
+ic_launcher_round.xml
+values
+colors.xml
+strings.xml
+themes.xml
+xml
+backup_rules.xml
+data_extraction_rules.xml
+provider_paths.xml
