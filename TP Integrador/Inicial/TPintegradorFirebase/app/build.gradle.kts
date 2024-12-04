@@ -1,3 +1,5 @@
+
+
 plugins {
     alias(libs.plugins.android.application)
 }
@@ -14,6 +16,8 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "API_KEY", "\"${project.findProperty("API_KEY") ?: ""}\"")
     }
 
     buildTypes {
@@ -32,6 +36,7 @@ android {
 
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 }
 
@@ -41,9 +46,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation(libs.support.annotations)
 
-    implementation(libs.shapeofview)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

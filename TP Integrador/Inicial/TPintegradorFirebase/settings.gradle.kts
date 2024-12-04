@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TPintegradorFirebase"
+rootProject.name = "tpi"
 include(":app")
+ 

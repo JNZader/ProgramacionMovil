@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
-        <item name="boxStrokeColor">@color/primary</item>
-        <item name="hintTextColor">@color/text_hint</item>
-        <item name="boxBackgroundColor">@color/surface_light</item>
-    </style>
-</resources>
